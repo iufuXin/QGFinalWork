@@ -27,8 +27,6 @@ public class showAllCourseServlet extends HttpServlet {
 
         Object occupation = session.getAttribute("occupation");
 
-
-
         //获取在规定时间内的课程
         ArrayList<Course> courses = new ArrayList<>();
 //

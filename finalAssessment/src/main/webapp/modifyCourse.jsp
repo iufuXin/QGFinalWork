@@ -63,6 +63,7 @@
         showTime: true, // 显示时间选择器
         showSeconds: true, // 可选择秒
         use24hour: true, // 使用24小时制
+        minDate: new Date(),//// 结束时间的最小值为当前时间
         onSelect: function(selectedDate) {
             console.log('选择的结束时间是：', selectedDate);
         }

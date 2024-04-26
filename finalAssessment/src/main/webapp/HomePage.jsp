@@ -15,11 +15,6 @@
 
 <h1>欢迎使用QG在线学习平台</h1>
 
-<form action="#" method="post">
-    <input type="text" name="searchInformation" id="searchInformation">
-    <input type="submit" value="搜索">
-</form>
-
 <form action="showAllCourseServlet" method="post">
     <input type="submit" value="查看全部课程">
 </form>
