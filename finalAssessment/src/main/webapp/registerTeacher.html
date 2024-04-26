@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎注册</title>
+    <!--<link href="HTML/css/register.css" rel="stylesheet"> -->
+
+</head>
+<body>
+
+<div class="form-div">
+    <div class="reg-content">
+        <h1>教师注册界面</h1>
+        <span>已有帐号？</span> <a href="/finalAssessment/index.jsp">登录</a>
+    </div>
+    <form id="reg-form" action="/finalAssessment/registerBackgroudCode" method="post">
+        <input type="hidden" name="occupation" value="teacher">
+
+        <label>
+            <table>
+
+                <tr>
+                    <td>用户名</td>
+                    <td class="inputs">
+                        <input name="name" type="text" id="name">（此处为你的名字）
+                        <br>
+                        <span id="username_err" class="err_msg" style="display: none">用户名不太受欢迎</span>
+                    </td>
+
+                </tr>
+            </table>
+        </label>
+        <label>
+            <table>
+                <tr>
+                    <td>密码</td>
+                    <td class="inputs">
+                        <input name="password" type="password" id="password">
+                        <br>
+                        <span id="password_err" class="err_msg" style="display: none">密码格式有误</span>
+                    </td>
+                </tr>
+            </table>
+        </label>
+        <label>
+            <table>
+                <tr>
+                    <td>请再次确认密码：</td>
+                    <td class="inputs">
+                        <input name="confirmPassword" type="password" id="confirmPassword">
+                        <br>
+                        <span id="confirmPassword_err" class="err_msg" style="display: none">密码格式有误</span>
+                    </td>
+                </tr>
+            </table>
+        </label>
+        <label>
+            <table>
+                <tr>
+                    <td>电子邮箱</td>
+                    <td class="inputs">
+                        <input name="email" type="text" id="email">
+                        <br>
+                    </td>
+                </tr>
+            </table>
+        </label>
+        <label>
+            <table>
+                <tr>
+                    <td>QQ</td>
+                    <td class="inputs">
+                        <input name="qq" type="text" id="qq">
+                        <br>
+                    </td>
+                </tr>
+            </table>
+        </label>
+        <label>
+            <br>
+            个人描述：
+            <textarea cols="20" rows="5" name="desc"></textarea>
+            <br>
+        </label>
+
+        <div class="buttons">
+                <input value="注 册" type="submit" id="reg_btn">
+
+
+        </div>
+        <br class="clear">
+    </form>
+<h5>注：在注册完之后系统会自动分配账号</h5>
+</div>
+</body>
+</html>
